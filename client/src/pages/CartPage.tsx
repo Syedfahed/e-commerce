@@ -66,11 +66,11 @@ const CartPage = () => {
                     </p>
                     <div className="flex items-center space-x-4">
                       <span className="text-xl font-bold text-primary">
-                        ${item.product.price.toLocaleString()}
+                      ₹{item.product.price.toLocaleString()}
                       </span>
                       {item.product.originalPrice && (
                         <span className="text-muted-foreground line-through">
-                          ${item.product.originalPrice.toLocaleString()}
+                          ₹{item.product.originalPrice.toLocaleString()}
                         </span>
                       )}
                     </div>
@@ -113,7 +113,7 @@ const CartPage = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Subtotal ({itemCount} items)</span>
-                  <span className="text-foreground font-semibold">${subtotal.toLocaleString()}</span>
+                  <span className="text-foreground font-semibold">₹{subtotal.toLocaleString()}</span>
                 </div>
                 
                 <div className="flex justify-between">
@@ -125,13 +125,13 @@ const CartPage = () => {
                 
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Tax</span>
-                  <span className="text-foreground font-semibold">${tax.toFixed(2)}</span>
+                  <span className="text-foreground font-semibold">₹{tax.toFixed(2)}</span>
                 </div>
                 
                 <div className="border-t border-border pt-4">
                   <div className="flex justify-between">
                     <span className="text-lg font-semibold text-foreground">Total</span>
-                    <span className="text-xl font-bold text-primary">${finalTotal.toFixed(2)}</span>
+                    <span className="text-xl font-bold text-primary">₹{finalTotal.toFixed(2)}</span>
                   </div>
                 </div>
               </div>

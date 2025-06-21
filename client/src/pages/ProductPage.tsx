@@ -136,11 +136,11 @@ const ProductPage = () => {
 
             <div className="flex items-center space-x-4">
               <span className="text-4xl font-bold text-primary">
-                ${product.price.toLocaleString()}
+                ₹{product.price.toLocaleString()}
               </span>
               {product.originalPrice && (
                 <span className="text-2xl text-muted-foreground line-through">
-                  ${product.originalPrice.toLocaleString()}
+                  ₹{product.originalPrice.toLocaleString()}
                 </span>
               )}
             </div>

@@ -67,7 +67,7 @@ const ShopPage = () => {
           
           <div className="flex items-center space-x-4 mt-4 lg:mt-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             {/* View Toggle */}
-            <div className="flex items-center space-x-2 luxury-card p-1">
+            <div className="xl:flex lg:flex md:flex sm:hidden hidden items-center space-x-2 luxury-card p-1 ">
               <button
                 onClick={() => setViewMode('grid')}
                 className={`p-2 rounded transition-all duration-300 hover:scale-110 ${
@@ -161,8 +161,8 @@ const ShopPage = () => {
                   />
                 </div>
                 <div className="flex justify-between text-sm text-muted-foreground">
-                  <span>${priceRange[0].toLocaleString()}</span>
-                  <span>${priceRange[1].toLocaleString()}</span>
+                  <span>₹{priceRange[0].toLocaleString()}</span>
+                  <span>₹{priceRange[1].toLocaleString()}</span>
                 </div>
               </div>
             </div>
